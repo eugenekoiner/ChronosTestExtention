@@ -12,8 +12,8 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 
 
 function sendToTelegramChannel(message) {
-  var botToken = "5851441797:AAFWK1YdP11_wU5-B-KtLy0eF3zhLF4Aux0";
-  var channelUsername = "@chronostesttesttest";
+  var botToken = "";
+  var channelUsername = "";
   var url = "https://api.telegram.org/bot" + botToken + "/sendMessage?chat_id=" + channelUsername + "&text=" + message;
   var xhr = new XMLHttpRequest();
   xhr.open("GET", url);
